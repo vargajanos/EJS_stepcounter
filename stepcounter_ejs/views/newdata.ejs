@@ -1,0 +1,19 @@
+<%- include('asd/header') %>
+
+<h4 class="mb-3">Steps</h4>
+
+<%- include('message') %>
+
+<form action="/steps/add" method="post">
+    <div class="form-floating mb-3">
+        <input type="date" class="form-control" name="date" placeholder="" max="<%= today %>">
+        <label for="date">Date</label>
+    </div>
+    <div class="form-floating mb-3">
+        <input type="number" class="form-control" name="count" placeholder="">
+        <label for="stepcount">Step Count</label>
+    </div>
+    <input class="btn btn-primary mb-3" type="submit" value="Save" name="saveBtn">
+</form>
+
+<%- include('footer') %>
